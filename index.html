@@ -8,25 +8,11 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.bootcss.com/fullPage.js/2.8.8/jquery.fullPage.min.css">
         <link rel="stylesheet" href="css/styles.min.css">
-
     </head>
     <body>
         <!-- main content wrap -->
         <div class="main">
-            <div class="frame-wrap">
-                <div class="frame-wrap-inner">
-                    <div class="toggle-frame">
-                        <div class="toggle-frame-inner">
-                            <div class="toggle-frame-close">
-                                <i class="fa fa-close" aria-hidden="true"></i>
-                            </div>
-                            <div class="frame-image">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- Components-->
             <div class="nav-icon">
                 <img src="assets/navigator.png" alt="">
             </div>
@@ -49,18 +35,19 @@
                     </ul>
                 </div>
             </div>
+            <!-- One Page-->
             <div id="fullpage">
                 <!-- Header Section -->
                 <section data-anchor="header" class="section header">
                     <div class="header-wrap">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-xs-12 col-md-4 no-padding">
-                                    <div class="header-box">
+                                <div class="col-xs-12 col-md-6 no-padding">
+                                    <div class="header-box" style="background-image: url('images/header-main2.jpg');">
                                         <div class="box-inner">
                                             <div class="home-wrap">
                                                 <div class="header-logo">
-                                                    <h1 class="theme-color">Scarlet Ryeo</h1>
+                                                    <h1 class="theme-color">Oskie King</h1>
                                                 </div>
                                                 <div class="header-text">
                                                     <h1>Cancerous Player</h1>
@@ -83,14 +70,14 @@
                                                     <hr class="bar theme-bg">
                                                     <div class="social-wrap">
                                                         <ul>
-                                                            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                                                            <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                                                            <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
-                                                            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-                                                            <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-                                                            <li><i class="fa fa-skype" aria-hidden="true"></i></li>
-                                                            <li><i class="fa fa-steam" aria-hidden="true"></i></li>
-                                                            <li><i class="fa fa-github" aria-hidden="true"></i></li>
+                                                            <li><a href="https://www.facebook.com/oskie.villarin" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                            <li><a href="https://twitter.com/myqueendianalyn" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                            <li><a href="https://plus.google.com/u/1/115176696379806903206" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                                            <li><a href="https://www.instagram.com/oskievillarin/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                                            <li><a href="https://www.linkedin.com/in/oskie-villarin-450093118/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                                            <li><a href="https://www.skype.com/en/" target="_blank"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                                            <li><a href="https://steamcommunity.com/id/oskievillarin/" target="_blank"><i class="fa fa-steam" aria-hidden="true"></i></a></li>
+                                                            <li><a href="https://github.com/oskievillarin1" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -98,9 +85,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-12 col-md-8 no-padding">
+                                <div class="col-xs-12 col-md-6 no-padding">
                                     <div class="header-box">
                                         <div class="slider-wrap">
+                                            <div class="slider-nav">
+                                                <i id="slider-left" class="fa fa-chevron-left" aria-hidden="true"></i>
+                                                <i id="slider-right" class="fa fa-chevron-right" aria-hidden="true"></i>
+                                            </div>
                                             <div class="slider-box bxslider3">
                                                 <div class="slider-item" style="background-image: url('images/header-bg2.jpg');">
                                                     <div class="slider-inner">
@@ -216,15 +207,12 @@
                             <div class="row">
                                 <div class="col-xs-12 col-md-6">
                                     <div class="about-info">
-                                        <h2>Scarlet H. Ryeo</h2>
+                                        <h2>Oskie R. Villarin</h2>
                                         <div class="about-image">
                                             <div class="img-wrap">
                                                 <img class="img-responsive grow" src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.0-9/18700293_1910884988937793_8644053434055514071_n.jpg?oh=81e1b2685518bfa705d80987d558a71d&oe=59ACB933" alt="">
                                             </div>
                                         </div>
-                                        <!-- <div class="circle">
-                                            <img src="https://placeimg.com/100/100/people" alt="">
-                                        </div> -->
                                         <p>I am a 22 years old investment analyst and travel enthusiast. Presently I am working for CSE, a Edinburgh based Investment Bank. I have done my MSc in Economics & Finance from Havard. I live in Musselburgh with my wife and daughter.</p>
                                     </div>
                                 </div>
@@ -287,41 +275,26 @@
                                         <hr class="bar">
                                         <div class="timeline-slider-box">
                                             <ul class="bxslider">
-                                                <li><div class="bxslider-item"><span>2011</span></div></li>
-                                                <li><div class="bxslider-item"><span>2012</span></div></li>
-                                                <li><div class="bxslider-item"><span>2013</span></div></li>
-                                                <li><div class="bxslider-item"><span>2014</span></div></li>
-                                                <li><div class="bxslider-item"><span>2015</span></div></li>
-                                                <li><div class="bxslider-item"><span>2016</span></div></li>
-                                                <li><div class="bxslider-item"><span>2017</span></div></li>
+                                                <li><div class="bxslider-item"><span>2015<br>2016</span></div></li>
+                                                <li><div class="bxslider-item"><span>2016<br>Jan - Jul</span></div></li>
+                                                <li><div class="bxslider-item"><span>2016<br>Aug - Dec</span></div></li>
+                                                <li><div class="bxslider-item"><span>2017<br>Jan - Present</span></div></li>
                                             </ul>
                                             <div class="pager">
                                                 <div class="pager-item active" data-slide-index="0">
-                                                    <span>2011</span>
+                                                    <span>2015 - 2016</span>
                                                     <div class="pager-bar"></div>
                                                 </div>
                                                 <div class="pager-item" data-slide-index="1">
-                                                    <span>2012</span>
+                                                    <span>Jan - Jul (2016)</span>
                                                     <div class="pager-bar"></div>
                                                 </div>
                                                 <div class="pager-item" data-slide-index="2">
-                                                    <span>2013</span>
+                                                    <span>Aug - Dec (2016)</span>
                                                     <div class="pager-bar"></div>
                                                 </div>
                                                 <div class="pager-item" data-slide-index="3">
-                                                    <span>2014</span>
-                                                    <div class="pager-bar"></div>
-                                                </div>
-                                                <div class="pager-item" data-slide-index="4">
-                                                    <span>2015</span>
-                                                    <div class="pager-bar"></div>
-                                                </div>
-                                                <div class="pager-item" data-slide-index="5">
-                                                    <span>2016</span>
-                                                    <div class="pager-bar"></div>
-                                                </div>
-                                                <div class="pager-item" data-slide-index="6">
-                                                    <span>2017</span>
+                                                    <span>Jan - Present (2017)</span>
                                                     <div class="pager-bar"></div>
                                                 </div>
                                             </div>
@@ -376,51 +349,6 @@
                                             </div>
                                         </div>
                                         <div class="info-item" data-info-index="3">
-                                            <div class="timeline-info-image">
-                                                <img class="img-responsive" src="images/timeline-icon2.png" alt="">
-                                            </div>
-                                            <div class="timeline-info-heading">
-                                                <p class="title theme-color">DOTA 2. (till Dec 2012)</p>
-                                                <p class="subtitle">Professional Cancer Player</p>
-                                            </div>
-                                            <div class="timeline-info-text">
-                                                <p>ALCOA UK was the first fortune 500 company in my career. Here my responsibility was to ensure that firm is able to continue its operations and that it has sufficient ability to satisfy both maturing short-term debt and upcoming operational expenses.</p>
-                                            </div>
-                                            <div class="timeline-info-link">
-                                                <a class="btn theme-color" href="#">Download Gameplay</a>
-                                            </div>
-                                        </div>
-                                        <div class="info-item" data-info-index="4">
-                                            <div class="timeline-info-image">
-                                                <img class="img-responsive" src="images/timeline-icon1.png" alt="">
-                                            </div>
-                                            <div class="timeline-info-heading">
-                                                <p class="title theme-color">DOTA 2. (till Dec 2012)</p>
-                                                <p class="subtitle">Professional Cancer Player</p>
-                                            </div>
-                                            <div class="timeline-info-text">
-                                                <p>ALCOA UK was the first fortune 500 company in my career. Here my responsibility was to ensure that firm is able to continue its operations and that it has sufficient ability to satisfy both maturing short-term debt and upcoming operational expenses.</p>
-                                            </div>
-                                            <div class="timeline-info-link">
-                                                <a class="btn theme-color" href="#">Download Gameplay</a>
-                                            </div>
-                                        </div>
-                                        <div class="info-item" data-info-index="5">
-                                            <div class="timeline-info-image">
-                                                <img class="img-responsive" src="images/timeline-icon1.png" alt="">
-                                            </div>
-                                            <div class="timeline-info-heading">
-                                                <p class="title theme-color">DOTA 2. (till Dec 2012)</p>
-                                                <p class="subtitle">Professional Cancer Player</p>
-                                            </div>
-                                            <div class="timeline-info-text">
-                                                <p>ALCOA UK was the first fortune 500 company in my career. Here my responsibility was to ensure that firm is able to continue its operations and that it has sufficient ability to satisfy both maturing short-term debt and upcoming operational expenses.</p>
-                                            </div>
-                                            <div class="timeline-info-link">
-                                                <a class="btn theme-color" href="#">Download Gameplay</a>
-                                            </div>
-                                        </div>
-                                        <div class="info-item" data-info-index="6">
                                             <div class="timeline-info-image">
                                                 <img class="img-responsive" src="images/timeline-icon2.png" alt="">
                                             </div>
@@ -530,31 +458,31 @@
                         <div class="container-fluid no-padding">
                             <div class="travel-slider">
                                 <ul class="bxslider1">
-                                    <li>
+                                    <li data-work="0">
                                         <img class="img-responsive" src="images/travel1.jpg" />
                                         <div class="overlay">
                                             <div class="overlay-inner">
                                                 <div class="overlay-text">
                                                     <h3>ITALY</h3>
                                                     <p>in August 2016 - 50 Photos</p>
-                                                    <a class="theme-color" href="#">View the Gallery</a>
+                                                    <a class="theme-color" href="#">Visit the site</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li data-work="1">
                                         <img class="img-responsive" src="images/travel2.jpg" />
                                         <div class="overlay">
                                             <div class="overlay-inner">
                                                 <div class="overlay-text">
                                                     <h3>ITALY</h3>
                                                     <p>in August 2016 - 50 Photos</p>
-                                                    <a class="theme-color" href="#">View the Gallery</a>
+                                                    <a class="theme-color" href="#">Visit the site</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li data-work="2">
                                         <img class="img-responsive" src="images/travel3.jpg" />
                                         <div class="overlay">
                                             <div class="overlay-inner">
@@ -566,7 +494,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li data-work="3">
                                         <img class="img-responsive" src="images/travel4.jpg" />
                                         <div class="overlay">
                                             <div class="overlay-inner">
@@ -578,7 +506,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li data-work="4">
                                         <img class="img-responsive" src="images/travel5.jpg" />
                                         <div class="overlay">
                                             <div class="overlay-inner">
@@ -590,7 +518,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li data-work="5">
                                         <img class="img-responsive" src="images/travel4.jpg" />
                                         <div class="overlay">
                                             <div class="overlay-inner">
@@ -602,7 +530,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li data-work="6">
                                         <img class="img-responsive" src="images/travel1.jpg" />
                                         <div class="overlay">
                                             <div class="overlay-inner">
@@ -614,7 +542,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li data-work="7">
                                         <img class="img-responsive" src="images/travel2.jpg" />
                                         <div class="overlay">
                                             <div class="overlay-inner">
@@ -640,6 +568,38 @@
                             </div>
                         </div>
                     </div>
+                    <div class="frame-wrap">
+                        <div class="frame-wrap-inner">
+                            <div class="toggle-frame">
+                                <div class="toggle-frame-inner">
+                                    <div class="frame-close">
+                                        <i class="fa fa-close" aria-hidden="true"></i><span> CLOSE</span>
+                                    </div>
+                                    <div class="frame-banner">
+                                        <h2>Strip that Down</h2>
+                                    </div>
+                                    <div class="frame-content">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-md-7 no-padding">
+                                                <div class="frame-content-image">
+                                                    <div class="frame-image-inner">
+                                                        <img class="grow img-responsive" src="images/imac-web.png" alt="">
+                                                        <img class="grow img-responsive" src="images/iphone-mobile1.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-md-5 no-padding">
+                                                <div class="frame-content-text">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                    <a class="theme-color" href="#">Visit Site</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <!-- Blogs Section -->
                 <section data-anchor="blog" class="section blog">
@@ -656,8 +616,8 @@
                 <section data-anchor="testimonials" class="section people">
                     <div class="people-wrap">
                         <div class="text-wrap">
-                            <h1>Ako <span>Mid</span>, 2 Tangoes 1 ward. <span>Tangina</span> Mo!</h1>
-                            <p>" cancer player 2017 "</p>
+                            <h1><span>ATOM</span> vs Sublime Editor ???</h1>
+                            <p>"Atom for the Win!!!"</p>
                         </div>
                     </div>
                 </section>
@@ -705,18 +665,18 @@
                             <div class="row">
                                 <div class="col-xs-12 col-md-8">
                                     <div class="footer-info">
-                                        <h1>I am<br><span class="theme-color">Scarlet Ryeo</span></h1>
+                                        <h1>I am<br><span class="theme-color">Oskie Villarin</span></h1>
                                         <h2>Web Developer & Cancerous Player</h2>
                                         <div class="social-wrap">
                                             <ul>
-                                                <li><a href="" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-skype" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-steam" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-github" aria-hidden="true"></i></li>
+                                                <li><a href="https://www.facebook.com/oskie.villarin" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a href="https://twitter.com/myqueendianalyn" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="https://plus.google.com/u/1/115176696379806903206" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                                <li><a href="https://www.instagram.com/oskievillarin/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                                <li><a href="https://www.linkedin.com/in/oskie-villarin-450093118/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                                <li><a href="https://www.skype.com/en/" target="_blank"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                                <li><a href="https://steamcommunity.com/id/oskievillarin/" target="_blank"><i class="fa fa-steam" aria-hidden="true"></i></a></li>
+                                                <li><a href="https://github.com/oskievillarin1" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -747,12 +707,6 @@
             </div>
         </div>
 
-        <!-- footer wrap -->
-        <footer>
-
-        </footer>
-
-        <script src="https://use.fontawesome.com/122b5b4a4c.js"></script>
         <script src="js/script.min.js"></script>
     </body>
 </html>
