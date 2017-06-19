@@ -4,26 +4,28 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>HIRE ME</title>
+        <title>TEST</title>
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.bootcss.com/fullPage.js/2.8.8/jquery.fullPage.min.css">
         <link rel="stylesheet" href="css/styles.min.css">
     </head>
-    <body>
+    <body class="fp-disabled">
         <!-- main content wrap -->
         <div class="main">
             <!-- Components-->
             <div class="nav-icon">
-                <img src="assets/navigator.png" alt="">
+                <div class="nav-mobile-icon visible-xs-*">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
             </div>
             <div class="nav-box">
                 <div class="nav-box-inner">
                     <div class="nav-box-close">
-                        <img src="assets/close-icon1.png" alt="">
+                        <img src="images/close-icon1.png" alt="">
                     </div>
                     <ul id="nav-list">
-                        <li data-menuanchor="none" class="fullpage-mode" id="remove-fullpage"><a href="#">Remove Page <br>Scroll Mode</a></li>
+                        <li data-menuanchor="none" class="hidden-xs" id="toggle-fullpage"><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Full Page Mode</a></li>
                         <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
                         <li data-menuanchor="about"><a href="#about">About Me</a></li>
                         <li data-menuanchor="timelines"><a href="#timelines">Timeline</a></li>
@@ -38,6 +40,9 @@
                     </ul>
                 </div>
             </div>
+            <div id="toggle-slidetop" class="nav-slidetop">
+                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            </div>
             <!-- One Page-->
             <div id="fullpage">
                 <!-- Header Section -->
@@ -50,11 +55,11 @@
                                         <div class="box-inner">
                                             <div class="home-wrap">
                                                 <div class="header-logo">
-                                                    <h1 class="theme-color">Oskie King</h1>
+                                                    <h1 class="theme-color">Oskie's Test</h1>
                                                 </div>
                                                 <div class="header-text">
                                                     <h1>Web Developer</h1>
-                                                    <p>Lorem ipsum dolor hahaha lorem ipsum dolor<br> Lorem ipsum dolor hahaha lorem ipsum dolor<br> the lannister send their regards!</p>
+                                                    <p>Lorem ipsum dolor hahaha lorem ipsum dolor Lorem ipsum dolor hahaha lorem ipsum dolor the lannister send their regards!</p>
                                                     <div class="personal-info">
                                                         <div class="personal-item">
                                                             <i class="fa fa-phone" aria-hidden="true"></i>
@@ -70,7 +75,7 @@
                                                         </div>
                                                     </div>
                                                     <a href="#">Download Resume</a>
-                                                    <hr class="bar theme-bg">
+                                                    <hr class="bar theme-bg hidden-xs">
                                                     <div class="social-wrap">
                                                         <ul>
                                                             <li><a href="https://www.facebook.com/oskie.villarin" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -207,17 +212,17 @@
                                                 <img class="img-responsive grow" src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.0-9/18700293_1910884988937793_8644053434055514071_n.jpg?oh=81e1b2685518bfa705d80987d558a71d&oe=59ACB933" alt="">
                                             </div>
                                         </div>
-                                        <p>Lorem ipsum keme keme keme 22 years sa borta tamalis kirara bella wasok ng ang na ang valaj sangkatuts juts bakit at nang conalei ganda lang effem shonga-shonga kasi kirara chapter bokot klapeypey-klapeypey at nang guash ano at bakit krang-krang fayatollah kumenis krung-krung.</p>
+                                        <p>I'm able to strategize and prioritize effectively to accomplish multiple tasks and stay calm under pressure.<br>Decisive, efficient team approach, collaboration to others and good communication skills. I prefer to visualize my ideas and thoughts to present or share it to others.</p>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
                                     <div class="about-list">
                                         <h3>What I can Do</h3>
-                                        <hr class="bar">
+                                        <hr class="bar hidden-xs">
                                         <div class="about-list-wrap">
                                             <div class="about-list-item">
                                                 <div class="about-list-icon">
-                                                    <img src="images/about-icon1.png" alt="">
+                                                    <i class="sprite sprite-about-icon1"></i>
                                                 </div>
                                                 <div class="about-list-text">
                                                     <p class="list-text-title">Developing Web App From Scratch</p>
@@ -226,7 +231,7 @@
                                             </div>
                                             <div class="about-list-item">
                                                 <div class="about-list-icon">
-                                                    <img src="images/about-icon3.png" alt="">
+                                                    <i class="sprite sprite-about-icon2"></i>
                                                 </div>
                                                 <div class="about-list-text">
                                                     <p class="list-text-title">Layouting Website from PSD files</p>
@@ -235,7 +240,7 @@
                                             </div>
                                             <div class="about-list-item">
                                                 <div class="about-list-icon">
-                                                    <img src="images/about-icon4.png" alt="">
+                                                    <i class="sprite sprite-about-icon3"></i>
                                                 </div>
                                                 <div class="about-list-text">
                                                     <p class="list-text-title">Data Visualising and Modeling</p>
@@ -244,10 +249,10 @@
                                             </div>
                                             <div class="about-list-item">
                                                 <div class="about-list-icon">
-                                                    <img src="images/about-icon2.png" alt="">
+                                                    <i class="sprite sprite-about-icon4"></i>
                                                 </div>
                                                 <div class="about-list-text">
-                                                    <p class="list-text-title">Analyze and Problem Solver</p>
+                                                    <p class="list-text-title">Analyze and Solving Problems</p>
                                                     <p class="list-text-content">I build abstract representation of a real world financial situation using complex mathematical functions & computer based tools.</p>
                                                 </div>
                                             </div>
@@ -265,8 +270,8 @@
                             <div class="row">
                                 <div class="col-xs-12 col-md-7">
                                     <div class="timeline-slider">
-                                        <h3 class="theme-color">Timeline</h3>
-                                        <hr class="bar">
+                                        <h3 class="theme-color">Work Experience</h3>
+                                        <hr class="bar hidden-xs">
                                         <div class="timeline-slider-box">
                                             <ul class="bxslider">
                                                 <li><div class="bxslider-item"><span>2015<br>2016</span></div></li>
@@ -370,7 +375,7 @@
                             <div class="pillar-wrap">
                                 <div class="pillar-item">
                                     <h3>Technical Skills</h3>
-                                    <hr class="bar theme-bg">
+                                    <hr class="bar theme-bg hidden-xs">
                                 </div>
                                 <div class="pillar-item">
                                     <div class="pillar-icon">
@@ -378,12 +383,11 @@
                                     </div>
                                     <div class="pillar-heading">
                                         <p class="pillar-heading-title">Web Development</p>
-                                        <p class="pillar-heading-date">2017-06-10 12:45pm</p>
+                                        <p class="pillar-heading-date">Mastery:&#160; 90%-100%</p>
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="pillar-content">
-                                        <p>Budget is the first step to gain some financial order in your home. #Budget #finance #planning<br> www.oskievillarin1.github.io
-                                        </p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. #frontend #backend #fullstack</p>
                                     </div>
                                 </div>
                                 <div class="pillar-item">
@@ -392,11 +396,11 @@
                                     </div>
                                     <div class="pillar-heading">
                                         <p class="pillar-heading-title">Wordpress</p>
-                                        <p class="pillar-heading-date">2017-06-10 12:45pm</p>
+                                        <p class="pillar-heading-date">Mastery:&#160; 90%-100%</p>
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="pillar-content">
-                                        <p>CEOs connect with hundreds of people daily. Yet only some interactions—and individuals—stand out as relevant and wise. For me, the difference between ...</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. #frontend #backend #fullstack</p>
                                     </div>
                                 </div>
                                 <div class="pillar-item">
@@ -405,11 +409,11 @@
                                     </div>
                                     <div class="pillar-heading">
                                         <p class="pillar-heading-title">Database Management</p>
-                                        <p class="pillar-heading-date">2017-06-10 12:45pm</p>
+                                        <p class="pillar-heading-date">Mastery:&#160; 80%-100%</p>
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="pillar-content">
-                                        <p>CEOs connect with hundreds of people daily. Yet only some interactions—and individuals—stand out as relevant and wise. For me, the difference between ...</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. #frontend #backend #fullstack</p>
                                     </div>
                                 </div>
                                 <div class="pillar-item">
@@ -418,11 +422,11 @@
                                     </div>
                                     <div class="pillar-heading">
                                         <p class="pillar-heading-title">Collaboration</p>
-                                        <p class="pillar-heading-date">2017-06-10 12:45pm</p>
+                                        <p class="pillar-heading-date">Proficiency:&#160; 95%-100%</p>
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="pillar-content">
-                                        <p>CEOs connect with hundreds of people daily. Yet only some interactions—and individuals—stand out as relevant and wise. For me, the difference between ...</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. #frontend #backend #fullstack</p>
                                     </div>
                                 </div>
                                 <div class="pillar-item">
@@ -431,11 +435,11 @@
                                     </div>
                                     <div class="pillar-heading">
                                         <p class="pillar-heading-title">New Dev Tools</p>
-                                        <p class="pillar-heading-date">2017-06-10 12:45pm</p>
+                                        <p class="pillar-heading-date">Proficiency:&#160; 90%-100% </p>
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="pillar-content">
-                                        <p>CEOs connect with hundreds of people daily. Yet only some interactions—and individuals—stand out as relevant and wise. For me, the difference between ...</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. #frontend #backend #fullstack</p>
                                     </div>
                                 </div>
                             </div>
@@ -558,7 +562,7 @@
                             <div class="slider-arrow">
                                 <div class="arrow-text">
                                     <span id="work-title">Lorem Ipsum Dolor</span>
-                                    <a id="toggle-work" class="theme-color" href="#">Open</a>
+                                    <span id="toggle-work" class="theme-color">Open</span>
                                 </div>
                                 <div class="arrow-nav">
                                     <i id="arrow-left" class="fa fa-chevron-left" aria-hidden="true"></i>
@@ -579,7 +583,7 @@
                                     </div>
                                     <div class="frame-content">
                                         <div class="row">
-                                            <div class="col-xs-12 col-md-7 no-padding">
+                                            <div class="col-xs-12 col-sm-7 no-padding">
                                                 <div class="frame-content-image">
                                                     <div class="frame-image-inner">
                                                         <img class="grow img-responsive" src="images/imac-web.png" alt="">
@@ -587,7 +591,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-12 col-md-5 no-padding">
+                                            <div class="col-xs-12 col-sm-5 no-padding">
                                                 <div class="frame-content-text">
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                                     <a class="theme-color" href="#">Visit Site</a>
@@ -601,27 +605,27 @@
                     </div>
                 </section>
                 <!-- Educations Section -->
-                <section data-anchor="education" class="section education">
+                <section data-anchor="education" class="section education fp-auto-height">
                     <div class="education-wrap">
                         <div class="education-pillar">
                             <div class="education-box" style="background: #ffd740;">
                                 <i class="fa fa-university" aria-hidden="true"></i>
-                                <p>Lorem Ipsum Dolor</p>
+                                <p>Mindanao State Universite <br> Iligan Institute of Technology</p>
                                 <hr>
                             </div>
                             <div class="education-box" style="background: #fdcf24;">
                                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                <p>Lorem Ipsum Dolor</p>
+                                <p>Bachelor of Science <br>in Information System</p>
                                 <hr>
                             </div>
                             <div class="education-box" style="background: #f1bf06;">
-                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                                <p>Lorem Ipsum Dolor</p>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <p>Graduated on<br> January 2017</p>
                                 <hr>
                             </div>
-                            <div class="education-box" style="background: #d6a900;">
-                                <i class="fa fa-meh-o" aria-hidden="true"></i>
-                                <p>Lorem Ipsum Dolor</p>
+                            <div class="education-box" style="background: #e4b608;">
+                                <i class="fa fa-trophy" aria-hidden="true"></i>
+                                <p>Cum Laude <br>unta pero Dota 2 is lifer</p>
                                 <hr>
                             </div>
                         </div>
@@ -683,7 +687,7 @@
                                     <div class="circle">
                                         <img src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.0-9/18700293_1910884988937793_8644053434055514071_n.jpg?oh=81e1b2685518bfa705d80987d558a71d&oe=59ACB933" alt="">
                                     </div>
-                                    <div class="text">
+                                    <div class="text hidden-xs">
                                         <p>Lorem Ipsum</p>
                                         <span>Cancer Player</span>
                                     </div>
@@ -692,7 +696,7 @@
                                     <div class="circle">
                                         <img src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.0-9/18700293_1910884988937793_8644053434055514071_n.jpg?oh=81e1b2685518bfa705d80987d558a71d&oe=59ACB933" alt="">
                                     </div>
-                                    <div class="text">
+                                    <div class="text hidden-xs">
                                         <p>Lorem Ipsum</p>
                                         <span>Cancer Player</span>
                                     </div>
@@ -701,7 +705,7 @@
                                     <div class="circle">
                                         <img src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.0-9/18700293_1910884988937793_8644053434055514071_n.jpg?oh=81e1b2685518bfa705d80987d558a71d&oe=59ACB933" alt="">
                                     </div>
-                                    <div class="text">
+                                    <div class="text hidden-xs">
                                         <p>Lorem Ipsum</p>
                                         <span>Cancer Player</span>
                                     </div>
@@ -711,7 +715,7 @@
                     </div>
                 </section>
                 <!-- Quotes Section -->
-                <section data-anchor="quotes" class="section quote">
+                <section data-anchor="quotes" class="section quote fp-auto-height">
                     <div class="quote-wrap">
                         <div class="text-wrap">
                             <h1><span>ATOM</span> vs Sublime Editor ???</h1>
@@ -726,28 +730,28 @@
                             <div class="record-pillar">
                                 <div class="record-pillar-item">
                                     <div class="pillar-icon">
-                                        <img src="images/record-coffee.png" alt="">
+                                        <i class="sprite sprite-record-coffee"></i>
                                     </div>
                                     <p class="pillar-title">200 cups of <br>Coffee / Milo</p>
                                     <p class="pillar-content">Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p>
                                 </div>
                                 <div class="record-pillar-item">
                                     <div class="pillar-icon">
-                                        <img src="images/record-beer.png" alt="">
+                                        <i class="sprite sprite-record-beer"></i>
                                     </div>
                                     <p class="pillar-title">115 Beer Drinks <br>with Team</p>
                                     <p class="pillar-content">Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p>
                                 </div>
                                 <div class="record-pillar-item">
                                     <div class="pillar-icon">
-                                        <img src="images/record-spotify.png" alt="">
+                                        <i class="sprite sprite-record-spotify"></i>
                                     </div>
                                     <p class="pillar-title">50,000 Spotify <br>Music Played</p>
                                     <p class="pillar-content">Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p>
                                 </div>
                                 <div class="record-pillar-item">
                                     <div class="pillar-icon">
-                                        <img src="images/record-travel.png" alt="">
+                                        <i class="sprite sprite-record-travel"></i>
                                     </div>
                                     <p class="pillar-title">Traveled 100 <br>Places with Team</p>
                                     <p class="pillar-content">Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p>
@@ -762,22 +766,22 @@
                         <div class="container">
                             <div class="blog-header">
                                 <h3>Featured Blogs</h3>
-                                <hr class="bar theme-bg">
+                                <hr class="bar theme-bg hidden-xs">
                             </div>
                             <div class="blog-grid">
                                 <div class="blog-item">
                                     <div class="card">
                                         <div class="card-header">
-                                            <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Test</p>
+                                            <p>Test</p>
                                             <p><span><i class="fa fa-calendar" aria-hidden="true"></i> July 2017</span></p>
                                         </div>
-                                        <div class="card-image" style="background: url('images/blog-image.jpg');"></div>
+                                        <div class="card-image" style="background-image: url('images/blog-image.jpg');"></div>
                                         <div class="card-content">
                                             <p class="card-title">This is a Title</p>
                                             <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                         </div>
                                         <div class="card-footer">
-                                            <p><i class="fa fa-link" aria-hidden="true"></i> View Link</p>
+                                            <a href="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties" target="_blank"><i class="fa fa-link" aria-hidden="true"></i> View Link</a>
                                             <p><i class="fa fa-heart" aria-hidden="true"></i> 5</p>
                                         </div>
                                     </div>
@@ -785,16 +789,16 @@
                                 <div class="blog-item">
                                     <div class="card">
                                         <div class="card-header">
-                                            <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Test</p>
+                                            <p>WEB DEV</p>
                                             <p><span><i class="fa fa-calendar" aria-hidden="true"></i> July 2017</span></p>
                                         </div>
-                                        <div class="card-image" style="background: url('images/blog-image1.jpg');"></div>
+                                        <div class="card-image" style="background-image: url('https://cdn.scotch.io/scotchy-uploads/2015/04/A-Vusial-Guide-to-CSS3-Flexbox-Layout-and-Properties.png');"></div>
                                         <div class="card-content">
-                                            <p class="card-title">This is a Title</p>
+                                            <p class="card-title">CSS3 Flexbox, a true hero!</p>
                                             <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                         </div>
                                         <div class="card-footer">
-                                            <p><i class="fa fa-link" aria-hidden="true"></i> View Link</p>
+                                            <a href="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties" target="_blank"><i class="fa fa-link" aria-hidden="true"></i> View Link</a>
                                             <p><i class="fa fa-heart" aria-hidden="true"></i> 5</p>
                                         </div>
                                     </div>
@@ -802,16 +806,16 @@
                                 <div class="blog-item">
                                     <div class="card">
                                         <div class="card-header">
-                                            <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Test</p>
+                                            <p>SERIES</p>
                                             <p><span><i class="fa fa-calendar" aria-hidden="true"></i> July 2017</span></p>
                                         </div>
-                                        <div class="card-image" style="background: url('images/blog-image.jpg');"></div>
+                                        <div class="card-image" style="background-image: url('http://media.moddb.com/images/members/1/123/122021/profile/c9lzmv4d3mgzpnyntz7s.jpg');"></div>
                                         <div class="card-content">
-                                            <p class="card-title">This is a Title</p>
+                                            <p class="card-title">Valar Moghulis!</p>
                                             <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                         </div>
                                         <div class="card-footer">
-                                            <p><i class="fa fa-link" aria-hidden="true"></i> View Link</p>
+                                            <a href="http://winteriscoming.net/2017/05/01/every-game-of-thrones-spoiler-we-know-for-season-7/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i> View Link</a>
                                             <p><i class="fa fa-heart" aria-hidden="true"></i> 5</p>
                                         </div>
                                     </div>
@@ -819,16 +823,16 @@
                                 <div class="blog-item">
                                     <div class="card">
                                         <div class="card-header">
-                                            <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Test</p>
+                                            <p>EGAMES</p>
                                             <p><span><i class="fa fa-calendar" aria-hidden="true"></i> July 2017</span></p>
                                         </div>
-                                        <div class="card-image" style="background: url('images/blog-image1.jpg');"></div>
+                                        <div class="card-image" style="background-image: url('http://cdn.akamai.steamstatic.com/steam/apps/570/header.jpg?t=1494984004');"></div>
                                         <div class="card-content">
-                                            <p class="card-title">This is a Title</p>
+                                            <p class="card-title">Dota 2 MMR Leaderboards</p>
                                             <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                         </div>
                                         <div class="card-footer">
-                                            <p><i class="fa fa-link" aria-hidden="true"></i> View Link</p>
+                                            <a href="https://dota2.com/leaderboards" target="_blank"><i class="fa fa-link" aria-hidden="true"></i> View Link</a>
                                             <p><i class="fa fa-heart" aria-hidden="true"></i> 5</p>
                                         </div>
                                     </div>
